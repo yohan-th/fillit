@@ -6,7 +6,7 @@
 /*   By: ythollet <ythollet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/25 15:27:20 by ythollet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/27 17:55:50 by evella      ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/12/05 15:22:36 by ythollet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,7 +23,9 @@ int		main(int argc, char **argv)
 {
 	int		a;
 	char	*file;
+	char	*boom = "ready ?";
 
+	*boom = '!';
 	a = 2;
 	if (a != argc)
 	{
