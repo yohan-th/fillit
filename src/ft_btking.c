@@ -6,7 +6,7 @@
 /*   By: ythollet <ythollet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 17:16:47 by ythollet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/27 17:52:58 by evella      ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/12/11 18:42:38 by ythollet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -14,9 +14,8 @@
 #include "fillit.h"
 
 /*
-** movetetri va deplacer les coord du tetri de 1
-** Si le deplacement depase le tableau on descend de 1
-** Si on arrive en bas à droite on retourne 0
+** On echappe a 131000 iteration pour escape avant d'ateindre le stack size.
+** I know.
 */
 
 int		ft_isfree(char **array, t_cord *tetri)
@@ -56,8 +55,6 @@ void	ft_unwritearray(char **array, t_cord *tetri)
 		i++;
 	}
 }
-
-#include <stdio.h>
 
 int		ft_btking(char **array, t_cord **tetri, int nbr_tetri, int count)
 {

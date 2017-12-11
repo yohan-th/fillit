@@ -6,7 +6,7 @@
 /*   By: ythollet <ythollet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/25 15:22:47 by ythollet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/27 17:52:28 by evella      ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/12/11 18:43:03 by ythollet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -75,9 +75,9 @@ int		ft_calc_size(int nbr_tetri, t_cord **tetri)
 		n = -1;
 		while (++n < 4)
 		{
-			if (tetri[i][n].x > sizemin)
+			if (tetri[i][n].x >= sizemin)
 				sizemin = tetri[i][n].x + 1;
-			if (tetri[i][n].y > sizemin)
+			if (tetri[i][n].y >= sizemin)
 				sizemin = tetri[i][n].y + 1;
 		}
 		i++;
